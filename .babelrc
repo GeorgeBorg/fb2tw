@@ -1,0 +1,11 @@
+{
+  "presets": ["env", "react"],
+  "plugins": [
+    "react-hot-loader/babel",
+    "syntax-dynamic-import",
+    "transform-object-rest-spread",
+    "transform-decorators-legacy",
+    "transform-export-extensions",
+    [ "transform-class-properties", { "spec": true } ]
+  ]
+}

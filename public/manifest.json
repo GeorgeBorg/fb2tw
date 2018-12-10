@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+
+	"name": "FB2TW",
+	"description": "Sync your facebook events with your Teamweek timeline",
+	"version": "0.0.4",
+
+	"icons": {
+		"16": "nq-logo-white.png",
+		"48": "nq-logo-white.png",
+		"128": "nq-logo-white.png"
+	},
+
+	"background": {
+		"page": "app/background.html",
+		"persistent": false
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["https://app.teamweek.com/*"],
+			"css": ["/assets/main.css"],
+			"run_at": "document_end",
+			"all_frames": true,
+			"js": ["/assets/main.js"]
+		}
+	],
+
+	"permissions": ["identity", "storage"]
+}

@@ -1,0 +1,33 @@
+:global .root {
+	z-index: 5;
+	bottom: 12vh;
+	user-select: none;
+	position: fixed;
+	right: 0;
+
+	button {
+		background: #fff;
+		float: left;
+		height: 44px;
+		display: flex;
+		align-items: stretch;
+		border-radius: 2px;
+		box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.12);
+		cursor: pointer;
+		color: #201a32;
+		padding: 0 12px;
+		white-space: nowrap;
+		position: relative;
+		font-size: 12px;
+		box-sizing: border-box;
+		margin-left: 10px;
+		border: none;
+	}
+
+	.sync {
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
